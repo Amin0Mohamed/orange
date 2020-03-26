@@ -1,0 +1,30 @@
+uuid: 990b535d-bd95-446c-a9f4-853922fbb359
+langcode: en
+status: true
+dependencies:
+  config:
+    - views.view.social
+  module:
+    - system
+    - views
+  theme:
+    - orange
+id: views_block__social_block_1
+theme: orange
+region: footer
+weight: -5
+provider: null
+plugin: 'views_block:social-block_1'
+settings:
+  id: 'views_block:social-block_1'
+  label: ''
+  provider: views
+  label_display: '0'
+  views_label: ''
+  items_per_page: none
+visibility:
+  request_path:
+    id: request_path
+    pages: '<front>'
+    negate: false
+    context_mapping: {  }

@@ -1,0 +1,45 @@
+uuid: 6f83af69-660f-4a83-a8bc-34d350a021b9
+langcode: en
+status: true
+dependencies:
+  config:
+    - contact.form.advertising
+    - field.field.contact_message.advertising.field_details
+    - field.field.contact_message.advertising.field_email
+    - field.field.contact_message.advertising.field_name
+id: contact_message.advertising.default
+targetEntityType: contact_message
+bundle: advertising
+mode: default
+content:
+  field_email:
+    weight: 1
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+    type: email_default
+    region: content
+  field_name:
+    weight: 0
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+    type: string_textfield
+    region: content
+  message:
+    type: string_textarea
+    weight: 2
+    settings:
+      rows: 8
+      placeholder: ''
+    region: content
+    third_party_settings: {  }
+hidden:
+  copy: true
+  field_details: true
+  mail: true
+  name: true
+  preview: true
+  subject: true

@@ -1,0 +1,39 @@
+{%
+  set classes = [
+    'block',
+    'block-' ~ configuration.provider|clean_class,
+    'block-' ~ plugin_id|clean_class,
+    'clearfix',
+  ]
+%}
+<section{{ attributes.addClass(classes) }}>
+  {{ title_prefix }}
+  {% if label %}
+    <h2{{ title_attributes.addClass('block-title') }}>{{ label }}</h2>
+  {% endif %}
+  {{ title_suffix }}
+
+  {% block content %}
+  <div class="row">
+<div class="col-md-6 col-ms-6 col-xs-12">
+  <div class="left">
+    <p>
+     All rights reserved 2011 © <span>Orange Studio</span>
+    </p>
+  </div>
+  </div>
+
+  
+<div class="col-md-6 col-ms-6 col-xs-12">
+  <div class="right">
+    <ul class="list-unstyled">
+      <li><a href="#" title="Facebook"  target="_blank"><img alt="y8" src="{{ directory }}/images/social/fb.png" /></a></li>
+      <li><a href="https://eg.linkedin.com/company/orange-studio" title="Linkedin"  target="_blank"><img alt="y8" src="{{ directory }}/images/social/linkedin.png"/></a></li>
+      <li><a href="#"><img alt="y8" src="{{ directory }}/images/social/gmail.png" title="Gmail"  target="_blank" /></a></li>
+      <li><a href="https://twitter.com/OrangeStudio_co" title="Twitter"  target="_blank"><img alt="y8" src="{{ directory }}/images/social/twitter.png"/></a></li>
+    </ul>
+  </div>
+  </div>
+</div>  {% endblock %}
+</section>
+

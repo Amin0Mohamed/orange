@@ -1,0 +1,19 @@
+uuid: 57736057-5127-4de1-9637-ec721e8b4b80
+langcode: en
+status: true
+dependencies:
+  config:
+    - contact.form.advertising
+    - field.storage.contact_message.field_email
+id: contact_message.advertising.field_email
+field_name: field_email
+entity_type: contact_message
+bundle: advertising
+label: 'Email Address*'
+description: 'Enter Your Email Address'
+required: true
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: email

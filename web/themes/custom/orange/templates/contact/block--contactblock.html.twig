@@ -1,0 +1,55 @@
+
+{%
+  set classes = [
+    'block',
+    'block-' ~ configuration.provider|clean_class,
+    'block-' ~ plugin_id|clean_class,
+    'clearfix',
+  ]
+%}
+<section{{ attributes.addClass(classes) }}>
+  {{ title_prefix }}
+  {% if label %}
+    <h2{{ title_attributes.addClass('block-title') }}>{{ label }}</h2>
+  {% endif %}
+  {{ title_suffix }}
+
+  {% block content %}
+      <div class="col-md-6 col-xs-12">
+          <div class="left">
+              <p>
+              <b> Orange Studio</b> <br>
+                      Road 8, Block D, Cairo Free Zone, Nasr City, Cairo, EGYPT. <br>
+                      Tel .:  +202-22713519<br>
+                            &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
+                              +202-22713517<br>
+                      Fax .: +202-22713524<br>
+              </p>
+          </div>
+      </div>
+      <div class="col-md-6 col-xs-12">
+          <div class="right">
+            <form method="post">
+              <div class="form-group">
+                <label>Name</label>
+                <input type="text" class="form-control" placeholder="Enter Your Name" required>
+              </div>
+              <div class="form-group">
+                <label>Email Address</label>
+                <input type="email" class="form-control" placeholder="Enter Your Email" required>
+              </div>
+              <div class="form-group">
+                  {# <div class="text-area"> #}
+                  <label>Message</label>
+                  <textarea  class="form-control"  rows="7" cols="48" placeholder="Message"></textarea>
+                    {# </div> #}
+                    </div>
+                    <div class="button">
+        <button type="submit" name="btnsend" class="btn">Send Message</button>
+        </div>
+             </form>
+          </div>
+      </div>
+  {% endblock %}
+</section>
+

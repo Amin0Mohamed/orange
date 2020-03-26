@@ -1,0 +1,116 @@
+
+{% set container = theme.settings.fluid_container ? 'container-fluid' : 'container' %}
+
+{# header #}
+      {% if page.header %}
+        {% block header %}
+          <nav class="navbar navbar-fixed-top" id="nav">
+            <!-- Brand and toggle get grouped for better mobile display -->
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+              <a class="navbar-brand" href="#">
+                <img alt="Brand" src="themes/custom/orange/images/logo.png">
+              </a>
+            </div>
+            <!-- Collect the nav links, forms, and other content for toggling -->
+            <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+              {{ page.header }}
+            </div><!-- /.navbar-collapse -->
+          </nav>
+        {% endblock %}
+      {% endif %}
+
+{#start navbar#}
+ {% if page.slider %}
+   {% block slider %}
+      <section id="slider">
+        {{ page.slider }}
+      </section>
+   {% endblock %}
+ {% endif %}
+{#end navbar#}
+{# Main #}
+{% block main %}
+  <div role="main" class="main-container {{ container }} js-quickedit-main-content">
+    <div class="row">
+
+      {# start about #}
+      {% block about %}
+        <div class="about" id="about" >
+          {{ page.about }}
+        </div>
+      {% endblock %}
+      {# end about  #}
+
+      {# start services block #}
+      {% block services %}
+        <section id="services">
+          {{ page.services }}
+        </section>
+      {% endblock %}
+      {# end services block #}
+
+      {# start portofolio block #}
+      {% block portofolio %}
+        <section id="portfolio">
+          {{ page.portofolio }}
+        </section>
+      {% endblock %}
+      {# end portofolio block #}
+
+
+{#        {% block content %}#}
+{#          <a id="main-content"></a>#}
+{#          {{ page.content }}#}
+{#        {% endblock %}#}
+
+
+    </div>
+  </div>
+ {% endblock %}
+{# End main #}
+
+
+
+{# start contact #}
+{% block contact %}
+    <section class="container" id="contact">
+      {{ page.contact }}
+    </section>
+{% endblock %}
+{# end contact  #}
+
+{# start map #}
+{% block map %}
+  <div class="map" >
+    {{ page.map }}
+  </div>
+{% endblock %}
+{# end map  #}
+
+{# start footer #}
+{% if page.footer %}
+  {% block footer %}
+    <footer class="footer {{ container }}" role="contentinfo">
+      {{ page.footer }}
+    </footer>
+  {% endblock %}
+{% endif %}
+{# end footer #}
+
+
+<!--**********loading page***********-->
+<div class="loading d-flex justify-content align-items" id="load">
+  <div class="loader"></div>
+</div>
+<!--***********loading page*************-->
+
+<!--**********scroll up***********-->
+  <i class="fa fa-arrow-circle-up fa-2x" onclick="topFunction()" id="myBtn"></i>
+<!--***********scroll up*************-->
+

@@ -1,0 +1,24 @@
+{% if title %}
+  <h3>{{ title }}</h3>
+{% endif %}
+
+<p class="description">
+  <span class="span_header">Orange Studio</span>
+    offers a wide range of web development services which are tailored to each clients individual needs and requirements. We specialize in offering complete end to end solutions in which we take care of the project from start to finish and have a range of maintenance contracts available. Orange Studio is also able to offer Search Engine Optimization and Internet marketing services for your completed website.
+    We select the right technologies and tools that provide the most flexible and powerful solutions for the situation. We are inspired by the best of today's technology and can apply it to your problems.
+</p>
+
+
+
+<div class="row">
+    {% for row in rows %}
+    {%
+        set row_classes = [
+        default_row_class ? 'views-row', 'col-lg-3 col-md-6 col-sm-6 col-xs-12'
+        ]
+    %}
+    <div{{ row.attributes.addClass(row_classes) }}>
+        {{- row.content -}}
+    </div>
+    {% endfor %}
+</div>

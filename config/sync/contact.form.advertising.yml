@@ -1,0 +1,12 @@
+uuid: 3b8f7508-490c-43e2-b5d5-8dfbdcc00c94
+langcode: en
+status: true
+dependencies: {  }
+id: advertising
+label: Contacts
+recipients:
+  - Orange@gmail.com
+reply: 'thank u for your message'
+weight: 0
+message: ''
+redirect: ''

@@ -1,0 +1,24 @@
+uuid: b2f256cc-8018-4718-a31a-01be5bfcd2ed
+langcode: en
+status: true
+dependencies:
+  config:
+    - views.view.portofolio
+  module:
+    - views
+  theme:
+    - orange
+id: views_block__portofolio_block_2
+theme: orange
+region: portofolio
+weight: 0
+provider: null
+plugin: 'views_block:portofolio-block_2'
+settings:
+  id: 'views_block:portofolio-block_2'
+  label: ''
+  provider: views
+  label_display: '0'
+  views_label: ''
+  items_per_page: none
+visibility: {  }

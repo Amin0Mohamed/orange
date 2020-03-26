@@ -1,0 +1,12 @@
+uuid: de3f59aa-4628-4f79-b4dc-8a87e79788f6
+langcode: en
+status: true
+dependencies: {  }
+id: orange
+label: orange
+recipients:
+  - orange@orange.com
+reply: 'than u'
+weight: 0
+message: ''
+redirect: ''

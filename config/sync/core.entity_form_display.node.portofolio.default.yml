@@ -1,0 +1,60 @@
+uuid: f27c551a-1ca6-47c7-9356-40c9caa25d4b
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.node.portofolio.body
+    - field.field.node.portofolio.field_portofoilo_image
+    - field.field.node.portofolio.field_portofolio_link
+    - image.style.thumbnail
+    - node.type.portofolio
+  module:
+    - image
+    - link
+    - text
+id: node.portofolio.default
+targetEntityType: node
+bundle: portofolio
+mode: default
+content:
+  body:
+    type: text_textarea_with_summary
+    weight: 1
+    settings:
+      rows: 9
+      summary_rows: 3
+      placeholder: ''
+      show_summary: false
+    third_party_settings: {  }
+    region: content
+  field_portofoilo_image:
+    weight: 2
+    settings:
+      progress_indicator: throbber
+      preview_image_style: thumbnail
+    third_party_settings: {  }
+    type: image_image
+    region: content
+  field_portofolio_link:
+    weight: 26
+    settings:
+      placeholder_url: ''
+      placeholder_title: ''
+    third_party_settings: {  }
+    type: link_default
+    region: content
+  title:
+    type: string_textfield
+    weight: 0
+    region: content
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+hidden:
+  created: true
+  path: true
+  promote: true
+  status: true
+  sticky: true
+  uid: true

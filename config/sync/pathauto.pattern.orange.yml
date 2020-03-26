@@ -1,0 +1,22 @@
+uuid: c2fe4008-44f7-4f8d-8c08-cbb6806f849b
+langcode: en
+status: true
+dependencies:
+  module:
+    - node
+id: orange
+label: orange/title
+type: 'canonical_entities:node'
+pattern: 'orange/[node:title]'
+selection_criteria:
+  bac49f81-b03b-4540-8ef6-6d5bf6840826:
+    id: node_type
+    bundles:
+      services: services
+    negate: false
+    context_mapping:
+      node: node
+    uuid: bac49f81-b03b-4540-8ef6-6d5bf6840826
+selection_logic: and
+weight: -5
+relationships: {  }

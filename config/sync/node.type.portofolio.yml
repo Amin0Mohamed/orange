@@ -1,0 +1,17 @@
+uuid: ac4fbf08-d981-4b5b-a9e8-e645128c6f87
+langcode: en
+status: true
+dependencies:
+  module:
+    - menu_ui
+third_party_settings:
+  menu_ui:
+    available_menus: {  }
+    parent: ''
+name: portofolio
+type: portofolio
+description: ''
+help: ''
+new_revision: true
+preview_mode: 1
+display_submitted: false

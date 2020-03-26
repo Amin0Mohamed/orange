@@ -1,0 +1,33 @@
+uuid: 4e1986ed-5881-48e1-b587-57360c9978fc
+langcode: en
+status: true
+dependencies:
+  config:
+    - block_content.type.contact_details
+    - field.field.block_content.contact_details.body
+  module:
+    - text
+id: block_content.contact_details.default
+targetEntityType: block_content
+bundle: contact_details
+mode: default
+content:
+  body:
+    type: text_textarea_with_summary
+    weight: 26
+    settings:
+      rows: 9
+      summary_rows: 3
+      placeholder: ''
+      show_summary: false
+    third_party_settings: {  }
+    region: content
+  info:
+    type: string_textfield
+    weight: -5
+    region: content
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+hidden: {  }

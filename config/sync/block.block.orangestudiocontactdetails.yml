@@ -1,0 +1,25 @@
+uuid: 8e4e7c89-046b-4157-aa45-7dfd1fd0af31
+langcode: en
+status: false
+dependencies:
+  content:
+    - 'block_content:contact_details:520a7953-6207-4c07-a8ac-dde7804a7732'
+  module:
+    - block_content
+  theme:
+    - orange
+id: orangestudiocontactdetails
+theme: orange
+region: contact
+weight: -6
+provider: null
+plugin: 'block_content:520a7953-6207-4c07-a8ac-dde7804a7732'
+settings:
+  id: 'block_content:520a7953-6207-4c07-a8ac-dde7804a7732'
+  label: 'Orange Studio  contact details'
+  provider: block_content
+  label_display: '0'
+  status: true
+  info: ''
+  view_mode: full
+visibility: {  }

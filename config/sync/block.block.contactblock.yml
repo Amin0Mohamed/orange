@@ -1,0 +1,29 @@
+uuid: 38ab9e8c-2a72-48b8-9815-c27f8c890ddd
+langcode: en
+status: true
+dependencies:
+  config:
+    - contact.form.advertising
+  module:
+    - contact_block
+    - system
+  theme:
+    - orange
+id: contactblock
+theme: orange
+region: contact
+weight: -5
+provider: null
+plugin: contact_block
+settings:
+  id: contact_block
+  label: 'Contact block'
+  provider: contact_block
+  label_display: visible
+  contact_form: advertising
+visibility:
+  request_path:
+    id: request_path
+    pages: '<front>'
+    negate: false
+    context_mapping: {  }

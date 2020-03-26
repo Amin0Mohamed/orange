@@ -1,0 +1,21 @@
+uuid: 5a6653a4-abb9-4987-bd7f-58c4f96be51a
+langcode: en
+status: true
+dependencies:
+  config:
+    - contact.form.advertising
+    - field.storage.contact_message.field_details
+id: contact_message.advertising.field_details
+field_name: field_details
+entity_type: contact_message
+bundle: advertising
+label: details
+description: "Orange Studio\r\nRoad 8, Block D, Cairo Free Zone, Nasr City, Cairo, EGYPT.\r\nTel .:  +202-22713519\r\n          +202-22713517\r\nFax .: +202-22713524"
+required: false
+translatable: false
+default_value:
+  -
+    value: 'Orange Studio Road 8, Block D, Cairo Free Zone, Nasr City, Cairo, EGYPT. Tel .:  +202-22713519           +202-22713517 Fax .: +202-22713524'
+default_value_callback: ''
+settings: {  }
+field_type: string

@@ -1,0 +1,15 @@
+framework:
+  css:
+    theme:
+      css/owl.carousel.min.css: {}
+      css/fontawesome.css: {}
+      css/bootstrap.min.css: {}
+      css/bootstrap-theme.min.css: {}
+      css/style.css: {}
+
+  js:
+    js/owl.carousel.min.js: {}
+    js/fontawesome.min.js: {}
+    js/all.min.js: {}
+    js/bootstrap.min.js: {}
+    js/main.js: {}

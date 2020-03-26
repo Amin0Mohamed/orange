@@ -1,0 +1,20 @@
+{%
+  set classes = [
+    'block',
+    'block-' ~ configuration.provider|clean_class,
+    'block-' ~ plugin_id|clean_class,
+    'clearfix',
+  ]
+%}
+<section{{ attributes.addClass(classes) }}>
+  {{ title_prefix }}
+  {% if label %}
+    <h2{{ title_attributes.addClass('block-title') }}>{{ label }}</h2>
+  {% endif %}
+  {{ title_suffix }}
+
+  {% block content %}
+    <a href="https://www.google.com/maps/@30.037631,31.351461,4053m/data=!3m1!1e3?hl=en" target="_blank"><img alt="y8" src="{{ directory }}/images/map2.jpg" /></a>
+  {% endblock %}
+</section>
+

@@ -1,0 +1,24 @@
+
+  <p>
+   <span class="span_header">Orange Studio</span>
+  believes in long term business relationship and client growth and that is why after-sale support is a key factor in our business approach.
+Once an Orange Studio client is always an Orange Studio client.
+  </p>
+<br>
+<br>
+<br>
+<div class="owl-carousel owl-theme">
+
+    {% for row in rows %}
+    {%
+        set row_classes = [
+        default_row_class ? 'views-row',
+        ]
+    %}
+    <div{{ row.attributes.addClass(row_classes) }}>
+        {{- row.content -}}
+    </div>
+    {% endfor %}
+
+</div>
+

@@ -1,0 +1,24 @@
+uuid: d189d30a-eed8-4c6c-8ac5-e62d07dd87f0
+langcode: en
+status: true
+dependencies:
+  config:
+    - views.view.services
+  module:
+    - views
+  theme:
+    - orange
+id: views_block__services_block_1_3
+theme: orange
+region: services
+weight: 0
+provider: null
+plugin: 'views_block:services-block_1'
+settings:
+  id: 'views_block:services-block_1'
+  label: Services
+  provider: views
+  label_display: visible
+  views_label: Services
+  items_per_page: none
+visibility: {  }
